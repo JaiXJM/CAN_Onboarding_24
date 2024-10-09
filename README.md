@@ -17,11 +17,12 @@ To begin:
 - Make sure you have git installed.
 - Open a terminal in this folder.
 - Type `git status` into the terminal. *If it lists files, git is already tracking these files and you can skip the rest of this.*
-- Type `git init`` into the terminal. *This creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.*
+- Type `git init` into the terminal. *This creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.*
 
-To save this version:
+
+#### To save this version:
 - First stage your changes (tell git you want to save certain files) by typing `git add --all`. *(telling git to add all files to its saving list)*
-- Next, type `git commit -m 'initial commit' `. *Commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.*
+- Next, type `git commit -m 'initial commit'`. *Commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.*
 
 ## DOWNLOAD GM PROVIDED INFO FOR THE CAN TEAM
 1. Create a folder on your computer that you can dump these files into!
@@ -47,7 +48,7 @@ Your output is one `int` value, corresponding to the integer representation of t
 
 The protection value process can be found in the **Vehicle Integration Guide** at the end of the Steering, Braking, or Propulsion PDFs.
 
-### Here is an example:
+#### Here is an example:
 
 `0000 1011` or 11, is passed in as `to_encode`
 
