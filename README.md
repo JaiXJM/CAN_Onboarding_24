@@ -80,6 +80,7 @@ Final Notes:
 - Your code should set all bits above this length to 0 (truncation).
 
 ***To test, build and run main.cpp***
+***Once it passes all tests, save it with `git commit`!!!***
 
 ## PART 2
 In this part, you will create a thread that performs the same task most of our actual transmit threads do. There are three steps:
@@ -102,3 +103,4 @@ Read up on mutexes here:
 You are provided with two mutexes: `map_mutex` and `transmit mutex`, which are the same as the ones in the actual system!
 
 ***To test, build and run main.cpp***
+***Once it passes the test, save it with `git commit`!!!***
