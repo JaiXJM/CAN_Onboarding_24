@@ -51,15 +51,18 @@ Here is an example:
 
 **8** is the length of the input in bits (and thus should be the output length)
 
-1. Addition
+1. Addition:
+
 Add the rolling count to to_encode.
 `0000 1011` + `10` = `0000 1101`
 
-2. Inverse
+2. Inverse:
+
 Take the inverse of all bits that are within the output length
 `0000 1011` -> `1111 0100`
 
-3. Add 1
+3. Add 1:
+
 Add '1' to the inverted value
 `1111 0101`
 
