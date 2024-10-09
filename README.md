@@ -43,7 +43,8 @@ Your output is one `int` value, corresponding to the integer representation of t
 
 
 The protection value process can be found in the **Vehicle Integration Guide** at the end of the Steering, Braking, or Propulsion PDFs.
-Here is an example:
+
+###Here is an example:
 
 `0000 1011` or 11, is passed in as encode
 
