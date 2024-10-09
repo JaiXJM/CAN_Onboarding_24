@@ -24,7 +24,7 @@ To begin:
 
 #### To save this version:
 - First, stage your changes (tell git you want to save certain files) by typing `git add --all`. 
->*(telling git to add all files to its saving list)*
+>*This tells git to add all files to its saving list*
 - Next, type `git commit -m 'initial commit'`. 
 >*Commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.*
 
@@ -54,26 +54,26 @@ The protection value process can be found in the **Vehicle Integration Guide** a
 
 #### Here is an example:
 
-`0000 1011` or 11, is passed in as `to_encode`
-
-`10` or 2, is `rolling_count`
-
-`8` is the length of the input in bits (and thus should be the output length)
+>`0000 1011` or 11, is passed in as `to_encode`
+>
+>`10` or 2, is `rolling_count`
+>
+>`8` is the length of the input in bits (and thus should be the output length)
 
 1. Addition:
 
-Add the rolling count to to_encode.
-`0000 1011` + `10` = `0000 1101`
+>Add the rolling count to to_encode.
+>`0000 1011` + `10` = `0000 1101`
 
 2. Inverse:
 
-Take the inverse of all bits that are within the output length
-`0000 1011` -> `1111 0100`
+>Take the inverse of all bits that are within the output length
+>`0000 1011` -> `1111 0100`
 
 3. Add 1:
 
-Add '1' to the inverted value
-`1111 0101`
+>Add '1' to the inverted value
+>`1111 0101`
 
 Final Notes: 
 - The protection value should always have the same length as the longest input (including rolling count, which always has a length of 2)
