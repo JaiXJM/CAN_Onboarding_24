@@ -16,13 +16,17 @@ To begin:
 2. Initialize this GIT repository (optional but recommended, you MUST learn git at some point):
 - Make sure you have git installed.
 - Open a terminal in this folder.
-- Type `git status` into the terminal. *If it lists files, git is already tracking these files and you can skip the rest of this.*
-- Type `git init` into the terminal. *This creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.*
+- Type `git status` into the terminal. 
+>*If it lists files, git is already tracking these files and you can skip the rest of this.*
+- Type `git init` into the terminal. 
+>*This creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.*
 
 
 #### To save this version:
-- First stage your changes (tell git you want to save certain files) by typing `git add --all`. *(telling git to add all files to its saving list)*
-- Next, type `git commit -m 'initial commit'`. *Commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.*
+- First, stage your changes (tell git you want to save certain files) by typing `git add --all`. 
+>*(telling git to add all files to its saving list)*
+- Next, type `git commit -m 'initial commit'`. 
+>*Commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.*
 
 ## Downloading all needed info
 1. Create a folder on your computer that you can dump these files into!
