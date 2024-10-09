@@ -1,4 +1,4 @@
-## WELCOME TO CAN TEAM!!!!!!!
+# WELCOME TO CAN TEAM!!!!!!!
 
 This directory is a small (~1.5 Hour max) intro task. There are only two functions for you to fill in, which go over two key portions of our actual CAN transmit software.
 
@@ -8,7 +8,7 @@ The functions you need to fill in are:
 
 We WILL be picking the best protection_value implementation for the final system, and you NEED to complete the process_thread function to understand how to work on any thread in our actual system. 
 
-# GETTING STARTED
+## GETTING STARTED
 To begin:
 
 -Open this folder in VSCode/whatever you use
@@ -22,7 +22,7 @@ To begin:
 ---- First stage your changes (tell git you want to save certain files) by typing 'git add --all' (telling git to add all files to its saving list)
 ---- Next, type 'git commit -m "initial commit" '. commit means to save this version, and -m tells it to expect a message (or name/label) for this save.
 
-# DOWNLOAD GM PROVIDED INFO FOR THE CAN TEAM
+## DOWNLOAD GM PROVIDED INFO FOR THE CAN TEAM
 -Create a folder on your computer that you can dump these files into!
 -Log in to autodrivechallenge.com
 -- Navigate to *"Jump to Activity"->"Team Capt/Member"->"Download Series Resources"* from the menu bar
@@ -31,8 +31,8 @@ To begin:
 -- Under *"SAE International"->"AutoDrive Rules"* download the **AutoDrive Challenge II - Year 4 Ruleset**
 -- Unzip any zip folders and make sure you can access the contents
 
-###### PART 1 ######
+## PART 1
 
 
-###### PART 2 ######
+## PART 2
 
