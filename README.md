@@ -8,7 +8,7 @@ The functions you need to fill in are:
 
 We WILL be picking the best protection_value implementation for the final system, and you NEED to complete the process_thread function to understand how to work on any thread in our actual system. 
 
-## GETTING STARTED
+## Getting Started
 To begin:
 
 1. Open this folder in VSCode/whatever you use
@@ -24,16 +24,16 @@ To begin:
 - First stage your changes (tell git you want to save certain files) by typing `git add --all`. *(telling git to add all files to its saving list)*
 - Next, type `git commit -m 'initial commit'`. *Commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.*
 
-## DOWNLOAD GM PROVIDED INFO FOR THE CAN TEAM
+## Downloading all needed info
 1. Create a folder on your computer that you can dump these files into!
 2. Log in to autodrivechallenge.com
-- Navigate to *"Jump to Activity"->"Team Capt/Member"->"Download Series Resources"* from the menu bar.
-
-- Under *"General Motors"->"Chevrolet Bolt EUV"* download the **Vehicle Integration Guide**, **Vehicle Lighting Guide**, and **BCM Lighting CPIDs guide**
-
-- Under *"SAE International"->"Scoring Documents"* download the **Scoring CAN Message Documentation**, **Scoring Rubric**, and **Vehicle CAN Collection Guide**
-
-- Under *"SAE International"->"AutoDrive Rules"* download the **AutoDrive Challenge II - Year 4 Ruleset**
+> Navigate to *"Jump to Activity"->"Team Capt/Member"->"Download Series Resources"* from the menu bar.
+>
+> Under *"General Motors"->"Chevrolet Bolt EUV"* download the **Vehicle Integration Guide**, **Vehicle Lighting Guide**, and **BCM Lighting CPIDs guide**
+>
+> Under *"SAE International"->"Scoring Documents"* download the **Scoring CAN Message Documentation**, **Scoring Rubric**, and **Vehicle CAN Collection Guide**
+>
+> Under *"SAE International"->"AutoDrive Rules"* download the **AutoDrive Challenge II - Year 4 Ruleset**
 3. Unzip any zip folders and make sure you can access the contents
 
 ## PART 1
