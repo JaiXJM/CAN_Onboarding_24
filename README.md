@@ -16,12 +16,12 @@ To begin:
 2. Initialize this GIT repository (optional but recommended, you MUST learn git at some point):
 - Make sure you have git installed.
 - Open a terminal in this folder.
-- Type 'git status' into ther terminal - If it lists files, git is already tracking these files and you can skip the rest of this.
-- Type 'git init' into the terminal. this creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.
+- Type `git status` into ther terminal - If it lists files, git is already tracking these files and you can skip the rest of this.
+- Type `git init`` into the terminal. this creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.
 
 To save this version:
-- First stage your changes (tell git you want to save certain files) by typing 'git add --all' (telling git to add all files to its saving list)
-- Next, type 'git commit -m "initial commit" '. commit means to save this version, and -m tells it to expect a message (or name/label) for this save.
+- First stage your changes (tell git you want to save certain files) by typing `git add --all`` (telling git to add all files to its saving list)
+- Next, type `git commit -m 'initial commit' `. commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.
 
 ## DOWNLOAD GM PROVIDED INFO FOR THE CAN TEAM
 1. Create a folder on your computer that you can dump these files into!
@@ -33,6 +33,25 @@ To save this version:
 3. Unzip any zip folders and make sure you can access the contents
 
 ## PART 1
+In this part, you will code a function that calculates the Protection Value of a given integer at a given rolling count. 
+Your input is three `int` values:
+- `to_encode`: The original data to encode. (HINT: Though it is passed in as an int, think of it in binary when coding this)
+- `rolling_count`: An int representation of the Rolling Count, which can range from 0 - 3 inclusive.
+- `length` : The length of to_encode in bits (HINT: There is one case where this should not be the length of your output)
+
+Your output is one `int` value, corresponding to the integer representation of the binary protection value.
+
+
+The protection value process can be found in the **Vehicle Integration Guide** at the end of the Steering, Braking, or Propulsion PDFs.
+Here is an example:
+
+`0000 1011` or 11, is passed in as encode
+
+`10` or 2, is the rolling count
+
+8 is the length of the input in bits (and thus should be the output length)
+
+
 
 
 ## PART 2
