@@ -96,7 +96,9 @@ In this part, you will create a thread that performs the same task most of our a
 >This is an UNSAFE function, so a mutex will be needed!
 
 Read up on mutexes here:
+
 [https://www.geeksforgeeks.org/std-mutex-in-cpp/](https://www.geeksforgeeks.org/std-mutex-in-cpp/)
+
 You are provided with two mutexes: `map_mutex` and `transmit mutex`, which are the same as the ones in the actual system!
 
 ***To test, build and run main.cpp***
