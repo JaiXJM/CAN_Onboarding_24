@@ -63,9 +63,9 @@ int main(int argc, char* argv[]){
 
 void signal_thread(){
     std::this_thread::sleep_for(std::chrono::milliseconds(TEST_TIME));
-    kill_mutex.lock();
+    do_not_use_a.lock();
     thread_kill = true;
-    kill_mutex.unlock();
+    do_not_use_a.unlock();
 }
 
 

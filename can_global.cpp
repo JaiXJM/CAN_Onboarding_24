@@ -1,10 +1,22 @@
 #include "can_global.hpp"
 
 char from_map(){
+    if(map_check){
+        collisions++;
+    }else{
+        map_check = true;
+    }
+
+    do_not_use_b.lock();
     if(current>9)
     current = 1;
+    int x = current++;
+    do_not_use_b.unlock();
+    std::this_thread::sleep_for(std::chrono::milliseconds(1));
 
-    return current++;
+    map_check = false;
+
+    return x;
 }
 
 void transmit(std::string frame){
@@ -32,8 +44,8 @@ void verif(char v){
 
 
 bool check_thread_kill(){
-    kill_mutex.lock();
+    do_not_use_a.lock();
     bool to_return = thread_kill;
-    kill_mutex.unlock();
+    do_not_use_a.unlock();
     return to_return;
 }

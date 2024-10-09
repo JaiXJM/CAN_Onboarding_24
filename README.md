@@ -30,7 +30,7 @@ To begin:
 
 ## Downloading all needed info
 1. Create a folder on your computer that you can dump these files into!
-2. Log in to autodrivechallenge.com
+2. Log in to [autodrivechallenge.com](https://autodrivechallenge.com/)
 > Navigate to *"Jump to Activity"->"Team Capt/Member"->"Download Series Resources"* from the menu bar.
 >
 > Under *"General Motors"->"Chevrolet Bolt EUV"* download the **Vehicle Integration Guide**, **Vehicle Lighting Guide**, and **BCM Lighting CPIDs guide**
@@ -60,17 +60,17 @@ The protection value process can be found in the **Vehicle Integration Guide** a
 >
 >`8` is the length of the input in bits (and thus should be the output length)
 
->1. Addition: add the rolling count to the value to encode
+1. Addition: add the rolling count to the value to encode.
 
 >Add the rolling count to to_encode.
 >`0000 1011` + `10` = `0000 1101`
 
-2. Inverse: take the binary inverse of the above result
+2. Inverse: take the binary inverse of the above result.
 
 >Take the inverse of all bits that are within the output length
 >`0000 1011` -> `1111 0100`
 
-3. Add 1: to the above result
+3. Add 1: Add 1 to the above result.
 
 >Add '1' to the inverted value
 >`1111 0101`
@@ -79,5 +79,24 @@ Final Notes:
 - The protection value should always have the same length as the longest input (including rolling count, which always has a length of 2)
 - Your code should set all bits above this length to 0 (truncation).
 
-## PART 2
+***To test, build and run main.cpp***
 
+## PART 2
+In this part, you will create a thread that performs the same task most of our actual transmit threads do. There are three steps:
+1. Access Stored Data.
+>This is done through the function call `char from_map()`, which returns a `char` representing some data to transmit. 
+>This is an UNSAFE function, so a mutex will be needed!
+>*In the actual system, we use std::vectors*
+2. Encode the data.
+>Take the data you accessed and pass it through the `std::string encode(char)` function, which returns a string of data to 'transmit'
+>This is a SAFE function, no mutexes required.
+>*In the actual system, this converts to bytes to send, and does protection value calculations automatically*
+3. Transmit the data.
+>Take your string of encoded data and send it to `void transmit(std::string)`, which simulates transmission of a message over CAN.
+>This is an UNSAFE function, so a mutex will be needed!
+
+Read up on mutexes here:
+[https://www.geeksforgeeks.org/std-mutex-in-cpp/](https://www.geeksforgeeks.org/std-mutex-in-cpp/)
+You are provided with two mutexes: `map_mutex` and `transmit mutex`, which are the same as the ones in the actual system!
+
+***To test, build and run main.cpp***
