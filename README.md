@@ -16,19 +16,22 @@ To begin:
 2. Initialize this GIT repository (optional but recommended, you MUST learn git at some point):
 - Make sure you have git installed.
 - Open a terminal in this folder.
-- Type `git status` into ther terminal - If it lists files, git is already tracking these files and you can skip the rest of this.
-- Type `git init`` into the terminal. this creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.
+- Type `git status` into the terminal. *If it lists files, git is already tracking these files and you can skip the rest of this.*
+- Type `git init`` into the terminal. *This creates the .git hidden folder here, and will now track any file changes. This allows you to save past versions of code.*
 
 To save this version:
-- First stage your changes (tell git you want to save certain files) by typing `git add --all`` (telling git to add all files to its saving list)
-- Next, type `git commit -m 'initial commit' `. commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.
+- First stage your changes (tell git you want to save certain files) by typing `git add --all`. *(telling git to add all files to its saving list)*
+- Next, type `git commit -m 'initial commit' `. *Commit means to save this version, and `-m` tells it to expect a message (or name/label) for this save.*
 
 ## DOWNLOAD GM PROVIDED INFO FOR THE CAN TEAM
 1. Create a folder on your computer that you can dump these files into!
 2. Log in to autodrivechallenge.com
-- Navigate to *"Jump to Activity"->"Team Capt/Member"->"Download Series Resources"* from the menu bar
+- Navigate to *"Jump to Activity"->"Team Capt/Member"->"Download Series Resources"* from the menu bar.
+
 - Under *"General Motors"->"Chevrolet Bolt EUV"* download the **Vehicle Integration Guide**, **Vehicle Lighting Guide**, and **BCM Lighting CPIDs guide**
+
 - Under *"SAE International"->"Scoring Documents"* download the **Scoring CAN Message Documentation**, **Scoring Rubric**, and **Vehicle CAN Collection Guide**
+
 - Under *"SAE International"->"AutoDrive Rules"* download the **AutoDrive Challenge II - Year 4 Ruleset**
 3. Unzip any zip folders and make sure you can access the contents
 
@@ -46,11 +49,11 @@ The protection value process can be found in the **Vehicle Integration Guide** a
 
 ### Here is an example:
 
-`0000 1011` or 11, is passed in as encode
+`0000 1011` or 11, is passed in as `to_encode`
 
-`10` or 2, is the rolling count
+`10` or 2, is `rolling_count`
 
-**8** is the length of the input in bits (and thus should be the output length)
+`8` is the length of the input in bits (and thus should be the output length)
 
 1. Addition:
 
